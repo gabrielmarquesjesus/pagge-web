@@ -17,3 +17,17 @@ code {
 h4{
   margin: 0;
 }
+
+.btn-salvar{
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background-color: rgb(55, 145, 55);
+}
+.btn-salvar:hover{
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background-color: rgb(55, 175, 55);
+}
+

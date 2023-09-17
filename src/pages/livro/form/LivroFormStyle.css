@@ -1,0 +1,108 @@
+@import url(/pagge-web/src/styles/colors.css);
+
+.livro-container {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    transition: left 0.4s ease-in-out;
+    box-shadow: 10px 0px 15px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.etiqueta-titulo{
+    width: fit-content;
+    height: 30px;
+    display: flex;
+    background-color: var(--azul2);
+    padding: 0 15px 5px 15px;
+    align-items: center;
+    color: white;
+    border-radius: 0 0 15px 15px;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    position: absolute;
+    top: 0;
+}
+
+.livro-form{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    border: 2px solid var(--laranja1);
+    border-radius: 10px;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.containerUm{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+.containerDois{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btnSairContainer{
+    display: flex;
+    align-self: center;
+    position: absolute;
+    right: 0;
+}
+
+.btn-sair{
+    width: 30px;
+    height: 120px;
+    border-radius: 15px 0 0 15px;
+    border: none;
+    background-color: var(--azul2);
+    color: white;
+    font-size: 15pt;
+    font-weight: bold;
+    align-self: center;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.btn-sair-outline{
+    width: 40px;
+    height: 135px;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    background-color: white;
+    align-self: center;
+    position: absolute;
+    right: 0;
+}
+
+.btn-sair:hover{
+    background-color: var(--azulPastel2);
+}
+
+.form-div.descricaoLivro{
+    height: 100%;
+    align-items: start;
+    flex-direction: column;
+}
+
+.form-div.descricaoLivro h3{
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.campo.descricaoLivro{
+    resize: none;
+    margin: 0;
+    margin-bottom: 10px;
+}

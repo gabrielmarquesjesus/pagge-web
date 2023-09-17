@@ -1,13 +1,15 @@
+@import '../../styles/colors.css';
+
 .container-nav{
     width: 100%;
     height: 50px;
-    background-color: gray;
+    background-color: var(--azul3);
     display: flex;
 }
 
 .tab-nav{
     height: 100%;
-    background-color: rgb(99, 99, 99);
+    background-color: var(--azul3);
     border-bottom: 0;
     flex-grow: 1;
     display: flex;
@@ -16,15 +18,20 @@
 }
 
 .tab-nav:hover{
-    background-color: rgb(112, 112, 112);
+    background-color: var(--azul2);
+    transition: all 0.2s ease-in 0s;
 }
 
 .navlink{
     text-decoration: none;
-    color: black;
     width: 100%;
 }
 
-.navlink:hover{
-    color: rgb(0, 183, 255);
+.navlink h1:hover{
+    color: var(--laranja1);
+}
+
+.navlink h1{
+    color : white;
+    font-weight: 400;
 }

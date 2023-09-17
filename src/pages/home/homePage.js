@@ -1,16 +1,11 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import NavBar from '../../components/navBar/navBar';
+import { TELA_INICIAL } from '../../utils/constants/Telas';
 
 function HomePage() {
-    const navigate = useNavigate();
-    function navigateLivros(){
-        navigate("/livros")
-    };
-
     return(
         <div>
-            <NavBar tela='0 '></NavBar>
+            <NavBar tela = {TELA_INICIAL}></NavBar>
             <h1>Tela Inicial</h1>
         </div>
     )

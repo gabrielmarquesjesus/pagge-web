@@ -1,17 +1,18 @@
 import React, { useEffect } from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../navBar/style.css'
+import { LIVROS, TELA_INICIAL } from '../../utils/constants/Telas';
 
 function NavBar(props) {
 
     useEffect(()=>{
         var tela = props.tela;
-        if(tela == 0){
-            document.querySelector('.tab-inicial').style.backgroundColor = "rgb(112, 112, 112)"
-            document.querySelector('.navlink-home').style.color = "rgb(0, 183, 255)"
-        }else if(tela == 1){
-            document.querySelector('.tab-livros').style.backgroundColor = "rgb(112, 112, 112)"
-            document.querySelector('.navlink-livros').style.color = "rgb(0, 183, 255)"
+        if(tela == TELA_INICIAL){
+            document.querySelector('.tab-inicial').style.backgroundColor = "#03223f"
+            document.querySelector('.navlink-home h1').style.color = "#fccb6f"
+        }else if(tela == LIVROS){
+            document.querySelector('.tab-livros').style.backgroundColor = "#03223f"
+            document.querySelector('.navlink-livros h1').style.color = "#fccb6f"
         }
     },[])
 

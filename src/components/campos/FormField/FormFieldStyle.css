@@ -1,0 +1,33 @@
+.form-div {
+    display: flex;
+    width: auto;
+    height: 35px;
+    margin: 10px;
+    margin-bottom: 7px;
+    border-radius: 5px;
+    padding: 2px 10px;
+    background-color: #e19e4133;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.form-div h3 {
+    font-weight: bold;
+    text-wrap: nowrap;
+    color: var(--azulPastel3);
+}
+
+.form-div input,textarea {
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    font-size: 13pt;
+}
+
+.form-div:focus-within {
+    border: 1px solid var(--azulPastel1);
+}
